@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "style.css" %}"
+</head>
+<body>
+    <h1>hello world!</h1>
+    <img src="{%static"bigbig.jpg" %}" alt="">
+
+  <h1>John</h1>
+    <p>age：11</p>
+    <p>vip：ture</p>
+    <h1>Jerry</h1>
+    <p>age：32</p>
+    <p>vip：false</p>
+    <h1>Jack</h1>
+    <p>age：99</p>
+    <p>vip：ture</p>
+
+    <h1>your name:{{ name }}</h1>
+    <p>age:{{ age }}</p>
+    <p>vip:{{ vip }}</p>
+
+    <p>{{dc.a}}</p>
+    <p>{{dc.b}}</p>
+
+    {% for each in loops %}
+    <h5>{{each}}</h5>
+    {% endfor %}
+
+
+</body>
+</html>
